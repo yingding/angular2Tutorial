@@ -1,3 +1,5 @@
+# 1. Introduction
+The following section shows how to use the tool chain relating to developing web-app with Angular2.
 ## Description
 Tutorial for learning Angular2 with TypeScript
 
@@ -28,5 +30,13 @@ Tutorial for learning Angular2 with TypeScript
 * <code>tsc --init</code>
 * Using <code>tsc -w</code> to start tsc build with watch flag
 
-## Allow TypeScript compiler recognize JavaScript files with d.ts files
-* For angular2/core a typings.json file is needed to define d.ts files for angular2 js libs.
+## TypeScript compiler and native JavaScript libs
+* TypeScript compiler needs description files x.d.ts to recognize native JavaScript files.
+* For the tsc to recognize '@angular/core', a typings.json file is needed to define d.ts files for angular2 js libs.
+
+# 2. How to start?
+This sections shows how can you start this demo-app after you have cloned this repo.
+
+## A Quick Start
+* Installing all node_modules with <code>npm install</code>
+* Installing TypeScript description files according to typings.json with <code>npm run typings install</code> ,after this the tsc can recognize Angular2 js lib
