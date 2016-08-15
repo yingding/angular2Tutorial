@@ -33,7 +33,6 @@ Tutorial for learning Angular2 with TypeScript
 ## TypeScript compiler and native JavaScript libs
 * TypeScript compiler needs description files x.d.ts to recognize native JavaScript files.
 * For the tsc to recognize '@angular/core', a typings.json file is needed to define d.ts files for angular2 js libs.
-
 # 2. How to start?
 This sections shows how can you start this demo-app after you have cloned this repo.
 
@@ -41,7 +40,41 @@ This sections shows how can you start this demo-app after you have cloned this r
 * Installing all node_modules with <code>npm install</code>
 * Installing TypeScript description files according to typings.json with <code>npm run typings install</code> ,after this the tsc can recognize Angular2 js lib
 
-# 3. Binding a component property to Angular Template
+# 3. Angular2 RC5 
+## Binding a component property to Angular Template
 * More details about two-way binding can be found under https://angular.io/docs/ts/latest/guide/template-syntax.html
 * Examples of using model bindings in form can be found under https://angular.io/docs/ts/latest/guide/forms.html
 * **Note:** For two-way binding above Angular2 RC5, <code>import {FormsModule} from '@angular/forms';</code> is needed in your AngularModule.
+
+## Asterisk (*) appearing before directive names
+* The * is a bit of syntactic sugar that makes it easier to read and write directives that modify HTML layout with the help of templates. NgFor, NgIf, and NgSwitch all add and remove element subtrees that are wrapped in <template> tags.
+* More about this can be found unter https://angular.io/docs/ts/latest/guide/template-syntax.html#!#star-template
+
+## Directives
+<p>One of the defining features of a single page application is its manipulation of the DOM tree.
+ Instead of serving a whole new page every time a user navigates,
+ whole sections of the DOM appear and disappear according to the application state.
+</p>
+
+There are three kinds of Angular directives:
+1. Components or Component Directives
+2. Attribute directives 
+3. Structural directives
+
+### Components or Component Directives
+<p>The Component is really a directive with a template. 
+It's the most common of the three directives 
+and we write lots of them as we build our application.</p>
+
+### Attribute Directive
+<p> An attribute directive only changes the behavior 
+or appearance of an element. An attribute element modifies an existing element.</p>
+
+For example: <pre><code>&lt;div [ngStyle]="{'background-color': element.color}"&gt;&lt;/div&gt;</code></pre>
+
+### Structural Directive
+<p>A structural directive shows or hides an element. 
+A structural directive changes the Document Object Model (DOM) by adding 
+or removing an element entirely.</p>
+
+For example: <pre><code>&lt;div *ngIf="isAvailabe"&gt;{{element.title}} is available!&lt;/div&gt;</code></pre>

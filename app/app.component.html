@@ -1,3 +1,18 @@
+<style type="text/css">
+    .highlight {
+        background-color: beige;
+    }
+    .strike {
+        text-decoration: line-through;
+    }
+</style>
+<p>
+    <label for="showPanelCheck">Show Panel?</label>
+    <input id="showPanelCheck" type="checkbox" [(ngModel)]="showPanel"/>
+</p>
+<p *ngIf="showPanel">Panel is Shown</p>
+<p [ngClass]="getClasses()">Custom Classes</p>
+<p [ngStyle]="getStyles()">Custom Styles</p>
 <h2>{{title}}</h2>
 <form>
     <fieldset>
@@ -10,7 +25,7 @@
     </fieldset>
     <fieldset>
         <legend>Messages</legend>
-        <ol>
+        <ol> <!--ordered list-->
             <li *ngFor="let message of messages">
                 {{message}}
             </li>
