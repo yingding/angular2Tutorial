@@ -30,9 +30,14 @@ Tutorial for learning Angular2 with TypeScript
 * <code>tsc --init</code>
 * Using <code>tsc -w</code> to start tsc build with watch flag
 
+
 ## TypeScript compiler and native JavaScript libs
 * TypeScript compiler needs description files x.d.ts to recognize native JavaScript files.
 * For the tsc to recognize '@angular/core', a typings.json file is needed to define d.ts files for angular2 js libs.
+
+## Difference between let and var
+* More details can be found under http://stackoverflow.com/questions/762011/let-keyword-vs-var-keyword
+
 # 2. How to start?
 This sections shows how can you start this demo-app after you have cloned this repo.
 
@@ -78,3 +83,21 @@ A structural directive changes the Document Object Model (DOM) by adding
 or removing an element entirely.</p>
 
 For example: <pre><code>&lt;div *ngIf="isAvailabe"&gt;{{element.title}} is available!&lt;/div&gt;</code></pre>
+
+### Reactive extensions library (rxjs / RxJS)
+A reactive Extension allows us to get data from a security source.
+* Added in package.json
+* Imported in systemjs.config.js
+* More infos about RxJS can be found under https://angular.io/docs/ts/latest/guide/server-communication.html
+
+For example:<pre><code>var data;
+{"price": 20,"meta": "from-the-server","data": [] }
+var source = getDataFromUrlOrOtherAsyncSource();
+source
+.filter(item => item.price > 50.60) // filter the item
+    .map(item => item.data) // map item to item.data
+    .subscribe( items => this.data = items // save the item.data list to data 
+    );</code></pre>
+    
+### Testing HTTP Request
+* http://httpbin.org/ provides some free API, which allows you to test HTTP Request and Response.
