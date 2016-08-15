@@ -11,10 +11,13 @@ import {TextGenerator} from './demo.module';
     directives: [ListComponent]
 })
 export class AppComponent {
-    public message : string;
+    public count : number = 2;
+    public indicator : boolean = true;
+    public messages : string[] = ['Alpha', 'Bravo', 'Charlie'];
+    public title : string = 'Template Binding';
     constructor() {
         let generator = new TextGenerator();
-        this.message = generator.GetText();
+        //this.message = generator.GetText();
     }
 }
 

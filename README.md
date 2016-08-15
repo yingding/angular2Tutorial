@@ -40,3 +40,8 @@ This sections shows how can you start this demo-app after you have cloned this r
 ## A Quick Start
 * Installing all node_modules with <code>npm install</code>
 * Installing TypeScript description files according to typings.json with <code>npm run typings install</code> ,after this the tsc can recognize Angular2 js lib
+
+# 3. Binding a component property to Angular Template
+* More details about two-way binding can be found under https://angular.io/docs/ts/latest/guide/template-syntax.html
+* Examples of using model bindings in form can be found under https://angular.io/docs/ts/latest/guide/forms.html
+* **Note:** For two-way binding above Angular2 RC5, <code>import {FormsModule} from '@angular/forms';</code> is needed in your AngularModule.
