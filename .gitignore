@@ -84,8 +84,11 @@ crashlytics-build.properties
 fabric.properties
 
 .idea/
+## Exclude all compiled .js file, but allow systemjs.config.js
 *.js
+!systemjs.config.js
 *.js.map
+
 
 typings/
 
