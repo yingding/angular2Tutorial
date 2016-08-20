@@ -100,11 +100,7 @@ source
 
 ### Cold Observable
 
-<p>
-After the http.get is called, the request is not sent out instantaneously.
-This means, http.get does not send the request automatically. 
-The observable is cold which means the request won't go out until 
-the observable is subscribed by another component.</p>
+After the http.get is called, the request is not sent out instantaneously. This means, http.get does not send the request automatically. The observable is cold which means the request won't go out until the observable is subscribed by another component.
     
 ### Testing HTTP Request
 * http://httpbin.org/ provides some free API, which allows you to test HTTP Request and Response.
@@ -122,8 +118,5 @@ Both the ngSwitch and ngIf directives add elements to the DOM subtree only if th
   7. AfterViewChecked:    Event hook after view is checked
   8. OnDestroy:           Event hook after component is disposed.
 
-<p>In the lifecycle of a component, the OnChanges is called first time 
-to get the initial value of all the properties of the component class. 
-Once the properties are set to their initial values, Oninit is called. 
-DoCheck is than called, allowing doing a manually check of any further things...
-</p>
+In the lifecycle of a component, the OnChanges is called first time to get the initial value of all the properties of the component class. Once the properties are set to their initial values, Oninit is called. DoCheck is than called, allowing doing a manually check of any further things...
+
