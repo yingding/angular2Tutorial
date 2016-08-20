@@ -116,4 +116,17 @@ the observable is subscribed by another component.</p>
 Both the ngSwitch and ngIf directives add elements to the DOM subtree only if there conditions are met. If the coditions are false, the element is not rendered in HTML at all.
 
 # 4. Angular2 Lifecycle
+  1. OnChanges:           Event hook called when a data-bound input property value changes
+  2. OnInit:              Event hook called when the data-bound property are initialized
+  3. DoCheck:             Event hook for manual checks
+  4. AfterContentInit:    Event hook after content is initialized
+  5. AfterContentChecked: Event hook after content is checked
+  6. AfterViewInit:       Event hook after view is initialized
+  7. AfterViewChecked:    Event hook after view is checked
+  8. OnDestroy:           Event hook after component is disposed.
 
+<p>In the lifecycle of a component, the OnChanges is called first time 
+to get the initial value of all the properties of the component class. 
+Once the properties are set to their initial values, Oninit is called. 
+DoCheck is than called, allowing doing a manually check of any further things...
+</p>
