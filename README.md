@@ -71,15 +71,13 @@ and we write lots of them as we build our application.
 
 ### Attribute Directive
 
-<p> An attribute directive only changes the behavior 
-or appearance of an element. An attribute element modifies an existing element.</p>
+An attribute directive only changes the behavior or appearance of an element. An attribute element modifies an existing element.
 
 For example: <pre><code>&lt;div [ngStyle]="{'background-color': element.color}"&gt;&lt;/div&gt;</code></pre>
 
 ### Structural Directive
 
-<p>A structural directive shows or hides an element. A structural directive changes the Document Object Model (DOM) by adding 
-or removing an element entirely.</p>
+A structural directive shows or hides an element. A structural directive changes the Document Object Model (DOM) by adding or removing an element entirely.
 
 For example: <pre><code>&lt;div *ngIf="isAvailabe"&gt;{{element.title}} is available!&lt;/div&gt;</code></pre>
 
