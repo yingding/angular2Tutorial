@@ -67,9 +67,9 @@ There are three kinds of Angular directives:
 3. Structural directives
 
 ### Components or Component Directives
-<p>The Component is really a directive with a template. 
+The Component is really a directive with a template. 
 It's the most common of the three directives 
-and we write lots of them as we build our application.</p>
+and we write lots of them as we build our application.
 
 ### Attribute Directive
 <p> An attribute directive only changes the behavior 
