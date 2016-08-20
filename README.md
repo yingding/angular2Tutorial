@@ -106,7 +106,7 @@ After the http.get is called, the request is not sent out instantaneously. This 
 ### Working with ngIf or ngSwitch
 Both the ngSwitch and ngIf directives add elements to the DOM subtree only if there conditions are met. If the coditions are false, the element is not rendered in HTML at all.
 
-# 4. Angular2 Lifecycle
+# 4. Angular2 Component Lifecycle
 
   1. OnChanges:           Event hook called when a data-bound input property value changes
   2. OnInit:              Event hook called when the data-bound property are initialized
@@ -119,3 +119,8 @@ Both the ngSwitch and ngIf directives add elements to the DOM subtree only if th
 
 In the lifecycle of a component, the OnChanges is called first time to get the initial value of all the properties of the component class. Once the properties are set to their initial values, Oninit is called. DoCheck is than called, allowing doing a manually check of any further things...
 
+## Component Lifecycle Hooks
+
+Hook | Purpose | Components | Directives
+--- | --- | --- | --- 
+ngOnInit | Initialize the directive/component after Angular initializes the data-bound input properties. | yes | yes 
