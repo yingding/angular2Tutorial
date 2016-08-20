@@ -75,8 +75,10 @@ The Component is really a directive with a template. It's the most common of the
 For example: <pre><code>&lt;div [ngStyle]="{'background-color': element.color}"&gt;&lt;/div&gt;</code></pre>
 
 ### Structural Directive
+
 <p>
-A structural directive shows or hides an element. A structural directive changes the Document Object Model (DOM) by adding or removing an element entirely.
+A structural directive shows or hides an element. 
+A structural directive changes the Document Object Model (DOM) by adding or removing an element entirely.
 </p>
 
 For example: <pre><code>&lt;div *ngIf="isAvailabe"&gt;{{element.title}} is available!&lt;/div&gt;</code></pre>
