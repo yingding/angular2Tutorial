@@ -90,6 +90,7 @@ A reactive Extension allows us to get data from a security source.
 * Added in package.json
 * Imported in systemjs.config.js
 * More infos about RxJS can be found under https://angular.io/docs/ts/latest/guide/server-communication.html
+* **Note**: Using either the .toPromise() or .map() methods from RxJS to asynchronously parse the result of the HTTP request.
 
 For example:<pre><code>var data;
 {"price": 20,"meta": "from-the-server","data": [] }
@@ -100,6 +101,7 @@ source
     .subscribe( items => this.data = items // save the item.data list to data 
     );</code></pre>
 
+
 ### Cold Observable
 <p>
 After the http.get is called, the request is not sent out instantaneously.
@@ -109,4 +111,9 @@ the observable is subscribed by another component.</p>
     
 ### Testing HTTP Request
 * http://httpbin.org/ provides some free API, which allows you to test HTTP Request and Response.
+
+### Working with ngIf or ngSwitch
+Both the ngSwitch and ngIf directives add elements to the DOM subtree only if there conditions are met. If the coditions are false, the element is not rendered in HTML at all.
+
+# 4. Angular2 Lifecycle
 
