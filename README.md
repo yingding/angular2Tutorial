@@ -57,10 +57,8 @@ This sections shows how can you start this demo-app after you have cloned this r
 * More about this can be found unter <a href="https://angular.io/docs/ts/latest/guide/template-syntax.html#!#star-template">Angular2 Docs</a>
 
 ## Directives
-<p>One of the defining features of a single page application is its manipulation of the DOM tree.
- Instead of serving a whole new page every time a user navigates,
- whole sections of the DOM appear and disappear according to the application state.
-</p>
+One of the defining features of a single page application is its manipulation of the DOM tree. Instead of serving a whole new page every time a user navigates, whole sections of the DOM appear and disappear according to the application state.
+
 There are three kinds of Angular directives:
 1. Components or Component Directives
 2. Attribute directives 
