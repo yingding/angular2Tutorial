@@ -69,8 +69,7 @@ There are three kinds of Angular directives:
 The Component is really a directive with a template. It's the most common of the three directives and we write lots of them as we build our application.
 
 ### Attribute Directive
-<p>An attribute directive only changes the behavior or appearance of an element.
- An attribute element modifies an existing element.</p>
+An attribute directive only changes the behavior or appearance of an element. An attribute element modifies an existing element.
 
 For example: <pre><code>&lt;div [ngStyle]="{'background-color': element.color}"&gt;&lt;/div&gt;</code></pre>
 
