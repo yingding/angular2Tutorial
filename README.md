@@ -66,7 +66,7 @@ There are three kinds of Angular directives:
 
 ### Components or Component Directives
 The Component is really a directive with a template. 
-It's the most common of the three directives 
+It's the most common of the three directives ****
 and we write lots of them as we build our application.
 
 ### Attribute Directive
@@ -78,8 +78,7 @@ For example: <pre><code>&lt;div [ngStyle]="{'background-color': element.color}"&
 
 ### Structural Directive
 
-<p>A structural directive shows or hides an element. 
-A structural directive changes the Document Object Model (DOM) by adding 
+<p>A structural directive shows or hides an element. A structural directive changes the Document Object Model (DOM) by adding 
 or removing an element entirely.</p>
 
 For example: <pre><code>&lt;div *ngIf="isAvailabe"&gt;{{element.title}} is available!&lt;/div&gt;</code></pre>
@@ -102,6 +101,7 @@ source
 
 
 ### Cold Observable
+
 <p>
 After the http.get is called, the request is not sent out instantaneously.
 This means, http.get does not send the request automatically. 
