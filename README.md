@@ -99,6 +99,14 @@ source
     .map(item => item.data) // map item to item.data
     .subscribe( items => this.data = items // save the item.data list to data 
     );</code></pre>
+
+### Cold Observable
+<p>
+After the http.get is called, the request is not sent out instantaneously.
+This means, http.get does not send the request automatically. 
+The observable is cold which means the request won't go out until 
+the observable is subscribed by another component.</p>
     
 ### Testing HTTP Request
 * http://httpbin.org/ provides some free API, which allows you to test HTTP Request and Response.
+
