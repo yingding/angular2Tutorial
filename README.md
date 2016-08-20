@@ -53,8 +53,8 @@ This sections shows how can you start this demo-app after you have cloned this r
 * **Note:** For two-way binding above Angular2 RC5, <code>import {FormsModule} from '@angular/forms';</code> is needed in your AngularModule.
 
 ## Asterisk (*) appearing before directive names
-1. The * is a bit of syntactic sugar that makes it easier to read and write directives that modify HTML layout with the help of templates. NgFor, NgIf, and NgSwitch all add and remove element subtrees that are wrapped in <template> tags.
-2. More about this can be found unter https://angular.io/docs/ts/latest/guide/template-syntax.html#!#star-template
+* The * is a bit of syntactic sugar that makes it easier to read and write directives that modify HTML layout with the help of templates. NgFor, NgIf, and NgSwitch all add and remove element subtrees that are wrapped in <template> tags.
+* More about this can be found unter [Angular Doc](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#star-template)
 
 ## Directives
 <p>One of the defining features of a single page application is its manipulation of the DOM tree.
