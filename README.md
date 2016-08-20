@@ -46,17 +46,21 @@ This sections shows how can you start this demo-app after you have cloned this r
 * Installing all node_modules with <code>npm install</code>
 * Installing TypeScript description files according to typings.json with <code>npm run typings install</code> ,after this the tsc can recognize Angular2 js lib
 
-# 3. Angular2 RC5 
+# 3. Angular2 RC5
+
 ## Binding a component property to Angular Template
+
 * More details about two-way binding can be found under https://angular.io/docs/ts/latest/guide/template-syntax.html
 * Examples of using model bindings in form can be found under https://angular.io/docs/ts/latest/guide/forms.html
 * **Note:** For two-way binding above Angular2 RC5, <code>import {FormsModule} from '@angular/forms';</code> is needed in your AngularModule.
 
 ## Asterisk appearing before directive names
+
 * The asterisk is a bit of syntactic sugar that makes it easier to read and write directives that modify HTML layout with the help of templates. NgFor, NgIf, and NgSwitch all add and remove element subtrees that are wrapped in <template> tags.
 * More about this can be found unter https://angular.io/docs/ts/latest/guide/template-syntax.html
 
 ## Directives
+
 One of the defining features of a single page application is its manipulation of the DOM tree. Instead of serving a whole new page every time a user navigates, whole sections of the DOM appear and disappear according to the application state.
 
 There are three kinds of Angular directives:
@@ -65,6 +69,7 @@ There are three kinds of Angular directives:
 3. Structural directives
 
 ### Components or Component Directives
+
 The Component is really a directive with a template. 
 It's the most common of the three directives ****
 and we write lots of them as we build our application.
@@ -88,6 +93,7 @@ A reactive Extension allows us to get data from a security source.
 * More infos about RxJS can be found under https://angular.io/docs/ts/latest/guide/server-communication.html
 * **Note**: Using either the .toPromise() or .map() methods from RxJS to asynchronously parse the result of the HTTP request.
 
+
 For example:<pre><code>var data;
 {"price": 20,"meta": "from-the-server","data": [] }
 var source = getDataFromUrlOrOtherAsyncSource();
@@ -109,6 +115,7 @@ After the http.get is called, the request is not sent out instantaneously. This 
 Both the ngSwitch and ngIf directives add elements to the DOM subtree only if there conditions are met. If the coditions are false, the element is not rendered in HTML at all.
 
 # 4. Angular2 Lifecycle
+
   1. OnChanges:           Event hook called when a data-bound input property value changes
   2. OnInit:              Event hook called when the data-bound property are initialized
   3. DoCheck:             Event hook for manual checks
