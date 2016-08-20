@@ -52,8 +52,8 @@ This sections shows how can you start this demo-app after you have cloned this r
 * Examples of using model bindings in form can be found under https://angular.io/docs/ts/latest/guide/forms.html
 * **Note:** For two-way binding above Angular2 RC5, <code>import {FormsModule} from '@angular/forms';</code> is needed in your AngularModule.
 
-## Asterisk (*) appearing before directive names
-* The * is a bit of syntactic sugar that makes it easier to read and write directives that modify HTML layout with the help of templates. NgFor, NgIf, and NgSwitch all add and remove element subtrees that are wrapped in <template> tags.
+## Asterisk appearing before directive names
+* The asterisk is a bit of syntactic sugar that makes it easier to read and write directives that modify HTML layout with the help of templates. NgFor, NgIf, and NgSwitch all add and remove element subtrees that are wrapped in <template> tags.
 * More about this can be found unter <a href="https://angular.io/docs/ts/latest/guide/template-syntax.html#!#star-template">Angular2 Docs</a>
 
 ## Directives
@@ -61,7 +61,6 @@ This sections shows how can you start this demo-app after you have cloned this r
  Instead of serving a whole new page every time a user navigates,
  whole sections of the DOM appear and disappear according to the application state.
 </p>
-
 There are three kinds of Angular directives:
 1. Components or Component Directives
 2. Attribute directives 
