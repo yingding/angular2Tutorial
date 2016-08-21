@@ -131,3 +131,17 @@ ngAfterContentInit | After Angular projects external content into its view.	| ye
 ngAfterContentChecked | After Angular checks the bindings of the external content that it projected into its view. | yes | no
 ngAfterViewInit	| After Angular creates the component's view(s). | yes | no
 ngAfterViewChecked | After Angular checks the bindings of the component's view(s). | yes | no
+
+## Bindings 
+### Property Binding
+* Component Property Binding with square brackets []
+
+### Event Binding
+* Template Event Binding with parenthesis ()
+
+### Input Decoration
+* Input property with Input Decoration `@Input()`
+* More about Input property can be found unter https://angular.io/docs/ts/latest/cookbook/component-communication.html#!#parent-to-child-on-changes
+
+
+

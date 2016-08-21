@@ -9,14 +9,15 @@ import {DemoService} from './demo.service';
 import {Injectable} from '@angular/core';
 
 
-import './rxjs-operators'; // also imported name space for DemoService
+import './rxjs-operators';
+import {ChildComponent} from "./child.component"; // also imported name space for DemoService
 
 
 @Injectable()
 @Component({
     selector: 'demo-app',
     templateUrl: 'app/app.component.html',
-    directives: [ListComponent] /*inject ListComponent Directive*/
+    directives: [ListComponent, ChildComponent] /*inject ListComponent Directive*/
 })
 export class AppComponent implements OnInit {
     public count : number = 2;
@@ -27,6 +28,9 @@ export class AppComponent implements OnInit {
     public errorMessage : string;
 
     public showPanel : boolean = true;
+
+    // for child component
+    public currentValue : number = 3;
 
     public getStyles() {
         return {
@@ -51,6 +55,8 @@ export class AppComponent implements OnInit {
                 ipdata => this.origin = ipdata.origin,
                 error => this.errorMessage = <any> error
             );
+        console.log('AppComponent Initialized');
     }
+
 }
 
