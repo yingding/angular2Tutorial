@@ -4,20 +4,21 @@
 import {Component, OnInit} from '@angular/core';
 import {ListComponent} from './list.component';
 //import {TextGenerator} from './demo.module';
-import {DemoService} from './demo.service';
+import {DemoService} from './demo.service'; // also imported name space for DemoService
 //import {Observable} from 'rxjs/Observable';
 import {Injectable} from '@angular/core';
 
 
 import './rxjs-operators';
-import {ChildComponent} from "./child.component"; // also imported name space for DemoService
+import {ChildComponent} from "./child.component";
+import {LifecycleComponent} from "./lifecycle.component";
 
 
 @Injectable()
 @Component({
     selector: 'demo-app',
     templateUrl: 'app/app.component.html',
-    directives: [ListComponent, ChildComponent] /*inject ListComponent Directive*/
+    directives: [ListComponent, ChildComponent, LifecycleComponent] /*inject ListComponent Directive*/
 })
 export class AppComponent implements OnInit {
     public count : number = 2;

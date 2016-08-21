@@ -4,7 +4,7 @@
 
 import {Component, OnInit} from '@angular/core';
 @Component({
-    selector: 'example-oomponent',
+    selector: 'example-component',
     template: 'app/example.component.html'
 })
 export class ExampleComponent implements OnInit{
