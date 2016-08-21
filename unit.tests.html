@@ -17,17 +17,22 @@
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
-    <!--
+
     <script>
-        System.import('test').catch(function(err){ console.error(err); });
+        //load all dependencies at the same time
+        Promise.all([
+                System.import('test')]).then(function(modules) {
+            // manually trigger Jasmine test-runner
+            window.onload();
+        }).catch(function(err){ console.error(err); });
     </script>
-    -->
+
 </head>
 <body>
 <!-- Unit Testing Chapter #1: Proof of life.  -->
-
+<!--
 <script src="/test/unit.tests.js"></script>
-
+-->
 
 
 </body>

@@ -164,6 +164,12 @@ Modules import one another using a module loader. At runtime the module loader i
  typings search jasmine
  typings install jasmine --save
  </code></pre>
+ 
+ # 8. TypeScript accessor
+ By default, if your member does not have an accessor it can be inferred to be public.
+ 
+ # 9. UnitTesting with Jasmine
+ * More about UnitTest with Jasmine and Angular2 please see https://medium.com/google-developer-experts/angular-2-unit-testing-with-jasmine-defe20421584#.jn20d2gcp
 
 
 

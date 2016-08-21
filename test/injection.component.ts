@@ -22,7 +22,7 @@ export class GreetingGenerator implements IGreetingGenerator {
 export class Greeter {
     constructor(private _greetingGenerator : IGreetingGenerator) {}
     public greet(name : string) {
-        return this._greetingGenerator.getGreeting() + name;
+        return this._greetingGenerator.getGreeting() + ' ' + name;
     }
 }
 

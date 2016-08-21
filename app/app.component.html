@@ -64,3 +64,9 @@
 <button (click)="currentValue = currentValue+1">Increment Value</button>
 
 <lifecycle-component></lifecycle-component>
+
+<h2>Own Directive</h2>
+<blockquote><strong>Current Flag Value: </strong>{{flag}} </blockquote>
+<p *ngIf="flag">If flag is true</p>
+<p *ngIfNot="flag">If flag is not true</p>
+<button (click)="flag = !flag">Invert</button>

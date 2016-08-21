@@ -13,6 +13,7 @@ import './rxjs-operators';
 import {ChildComponent} from "./child.component";
 import {LifecycleComponent} from "./lifecycle.component";
 import * as Moment from "moment";
+import {IfNotDirective} from "./directive/ifnot.directive";
 
 
 
@@ -20,7 +21,7 @@ import * as Moment from "moment";
 @Component({
     selector: 'demo-app',
     templateUrl: 'app/app.component.html',
-    directives: [ListComponent, ChildComponent, LifecycleComponent] /*inject ListComponent Directive*/
+    directives: [ListComponent, ChildComponent, LifecycleComponent, IfNotDirective] /*inject ListComponent Directive*/
 })
 export class AppComponent implements OnInit {
     public count : number = 2;
@@ -38,6 +39,8 @@ export class AppComponent implements OnInit {
     // moment section
     public currentDate : string;
     public sinceDate : string;
+
+    public flag : boolean;
 
     public getStyles() {
         return {
@@ -57,6 +60,7 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit() {
+        this.flag = true;
         this.currentDate = Moment().format('dddd, MMMM Do YYYY, h:mm:ss a');
         this.sinceDate = Moment('2016-01-01', 'YYYY-MM-DD').fromNow();
         this.demoService.getItems()
