@@ -12,6 +12,7 @@ import {Injectable} from '@angular/core';
 import './rxjs-operators';
 import {ChildComponent} from "./child.component";
 import {LifecycleComponent} from "./lifecycle.component";
+import * as Moment from "moment";
 
 
 
@@ -34,6 +35,10 @@ export class AppComponent implements OnInit {
     // for child component
     public currentValue : number = 3;
 
+    // moment section
+    public currentDate : string;
+    public sinceDate : string;
+
     public getStyles() {
         return {
             'font-style':'italic',
@@ -52,6 +57,8 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit() {
+        this.currentDate = Moment().format('dddd, MMMM Do YYYY, h:mm:ss a');
+        this.sinceDate = Moment('2016-01-01', 'YYYY-MM-DD').fromNow();
         this.demoService.getItems()
             .subscribe(
                 ipdata => this.origin = ipdata.origin,

@@ -1,4 +1,6 @@
-import {IGreetingGenerator, Greeter} from "../app/injection.component";
+import {IGreetingGenerator, Greeter} from "./injection.component";
+import * as Moment from "moment";
+//import * as Jasmine from "jasmine";
 
 /**
  * Created by yingdingwang on 8/21/16.
@@ -10,7 +12,6 @@ class FakeGreeter implements IGreetingGenerator {
     }
 
 }
-
 
 // Using Jasmine unit tests
 describe('Greeter class', ()=>{

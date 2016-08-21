@@ -146,5 +146,24 @@ ngAfterViewChecked | After Angular checks the bindings of the component's view(s
 # 5. Angular2 Dependency Injection
 In software engineering, dependency injection is a software design pattern that implements inversion of control for resolving dependencies. A dependency is an object that can be used (a service). An injection is the passing of a dependency to a dependent object (a client) that would use it.
 
+# 6. Angular2 Modules
+Modules are executed within their own scope, not in the global scope; this means that variables, functions, classes, etc. declared in a module are not visible outside the module unless they are explicitly exported using one of the export forms. Conversely, to consume a variable, function, class, interface, etc. exported from a different module, it has to be imported using one of the import forms.
+
+Modules are declarative; the relationships between modules are specified in terms of imports and exports at the file level.
+
+Modules import one another using a module loader. At runtime the module loader is responsible for locating and executing all dependencies of a module before executing it. Well-known modules loaders used in JavaScript are the CommonJS module loader for Node.js and require.js for Web applications.
+
+## Import Module
+* Import all members from a file as a specific variable name `import * as YourModuleIdentifier from 'path/module'`, the ModuleIdentifier can be different as the module name.
+ 
+ # 7. TypeScript Definition Files
+ * Use --declaration option of TypeScript compiler to generate a d.ts file for the compiled javascript file.
+ 
+ ## Using typings tool
+ <pre><code>
+ typings search jasmine
+ typings install jasmine --save
+ </code></pre>
+
 
 
