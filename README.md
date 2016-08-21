@@ -143,5 +143,6 @@ ngAfterViewChecked | After Angular checks the bindings of the component's view(s
 * Input property with Input Decoration `@Input()`
 * More about Input property can be found unter https://angular.io/docs/ts/latest/cookbook/component-communication.html#!#parent-to-child-on-changes
 
+# 5. Angular2 Dependency Injection
 
 
