@@ -6,15 +6,20 @@
     // map tells the System loader where to look for things
     var map = {
         'app':                        'app', // 'dist',
+
+        'test':                       'test',
         '@angular':                   'node_modules/@angular',
         'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
-        'rxjs':                       'node_modules/rxjs'
+        'rxjs':                       'node_modules/rxjs',
+        'jasmine': 'node_modules/jasmine-core/lib/jasmine-core/',
     };
     // packages tells the System loader how to load when no filename and/or no extension
     var packages = {
         'app':                        { main: 'main.js',  defaultExtension: 'js' },
+        'test': {main:'unit.test.js', defaultExtension: 'js'},
         'rxjs':                       { defaultExtension: 'js' },
         'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
+        'jasmine': {main:'jasmine.js',defaultExtension:'js'},
     };
     var ngPackageNames = [
         'common',

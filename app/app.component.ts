@@ -14,6 +14,7 @@ import {ChildComponent} from "./child.component";
 import {LifecycleComponent} from "./lifecycle.component";
 
 
+
 @Injectable()
 @Component({
     selector: 'demo-app',

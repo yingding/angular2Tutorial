@@ -3,7 +3,7 @@
  */
 
 
-class Greeter {
+class GreeterOld {
     constructor(public name: string) {}
 
     public greet() : string {
@@ -13,8 +13,8 @@ class Greeter {
 
 }
 
-var greeter = new Greeter("World");
+var greeterOld = new GreeterOld("World");
 
-var greeting = greeter.greet();
+var greetingOld = greeterOld.greet();
 
-console.log(greeting);
+console.log(greetingOld);

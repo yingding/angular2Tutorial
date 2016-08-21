@@ -144,5 +144,7 @@ ngAfterViewChecked | After Angular checks the bindings of the component's view(s
 * More about Input property can be found unter https://angular.io/docs/ts/latest/cookbook/component-communication.html#!#parent-to-child-on-changes
 
 # 5. Angular2 Dependency Injection
+In software engineering, dependency injection is a software design pattern that implements inversion of control for resolving dependencies. A dependency is an object that can be used (a service). An injection is the passing of a dependency to a dependent object (a client) that would use it.
+
 
 
