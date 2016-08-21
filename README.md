@@ -124,3 +124,10 @@ In the lifecycle of a component, the OnChanges is called first time to get the i
 Hook | Purpose | Components | Directives
 --- | --- | --- | --- 
 ngOnInit | Initialize the directive/component after Angular initializes the data-bound input properties. | yes | yes 
+ngOnChanges | Respond after Angular sets a data-bound input property. The method receives a changes object of current and previous values. | yes | yes
+ngDoCheck | Detect and act upon changes that Angular can or won't detect on its own. Called every change detection run. | yes | yes
+ngOnDestroy | Cleanup just before Angular destroys the directive/component. Unsubscribe observables and detach event handlers to avoid memory leaks.| yes | yes
+ngAfterContentInit | After Angular projects external content into its view.	| yes | no
+ngAfterContentChecked | After Angular checks the bindings of the external content that it projected into its view. | yes | no
+ngAfterViewInit	| After Angular creates the component's view(s). | yes | no
+ngAfterViewChecked | After Angular checks the bindings of the component's view(s). | yes | no
