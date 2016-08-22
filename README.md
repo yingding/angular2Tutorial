@@ -42,9 +42,12 @@ Tutorial for learning Angular2 with TypeScript
 This sections shows how can you start this demo-app after you have cloned this repo.
 
 ## A Quick Start
+* Updating your npm wiht <code>npm install -g npm</code>
 * Installing TypeScript Compile with <code> npm install -g typescript</code>
 * Installing all node_modules with <code>npm install</code>
 * Installing TypeScript description files according to typings.json with <code>npm run typings install</code> ,after this the tsc can recognize Angular2 js lib
+* Installing the devDependency, sometime the devDependency Libs are not installed, to install the devDependency Libs with <code>npm install --only=dev</code>
+* Using <code>npm uninstall tsc</code>, then <code>npm install typescript</code> to remove tsc v1.5.x and install tsc 1.8.x.
 
 # 3. Angular2 RC5
 
