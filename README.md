@@ -160,6 +160,7 @@ Modules import one another using a module loader. At runtime the module loader i
  * Use --declaration option of TypeScript compiler to generate a d.ts file for the compiled javascript file.
  
  ## Using typings tool
+ * Install typings `npm install -g typings`
  <pre><code>
  typings search jasmine
  typings install jasmine --save
