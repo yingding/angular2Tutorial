@@ -3,11 +3,7 @@
  */
 
 import { Component } from '@angular/core';
-
-export class Hero {
-    id: number;
-    name: string;
-}
+import {Hero} from './hero';
 
 const HEROES: Hero[] = [
     { id: 11, name: 'Mr. Nice' },
@@ -26,7 +22,7 @@ const HEROES: Hero[] = [
 @Component({
     selector: 'demo-app',
     template: `
-<!--<h1>{{title}}</h1>-->
+<h1>{{title}}</h1>
 <h2>My Heroes</h2>
 <ul class="heroes">
     <!-- use property binding of li css class selected, class.selected -->
@@ -35,16 +31,8 @@ const HEROES: Hero[] = [
        <span class="badge">{{hero.id}}</span> {{hero.name}}
     </li>
 </ul>
-<!-- if selectedHero is not undefined-->
-<div *ngIf="selectedHero">
-  <h2>{{selectedHero.name}} details!</h2>
-  <div><label>id: </label>{{selectedHero.id}}</div>
-  <div>
-    <label>name:</label>
-    <!-- two binding, () event binding from template to component + [] property binding from component to template -->
-    <input [(ngModel)]="selectedHero.name" placeholder="name">
-  </div>
-</div>
+<!-- property binding to input property in child component-->
+<demo-hero-detail [hero]="selectedHero"></demo-hero-detail>
 `,
     styles: [`
   .selected {
