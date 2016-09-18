@@ -149,6 +149,17 @@ ngAfterViewChecked | After Angular checks the bindings of the component's view(s
 # 5. Angular2 Dependency Injection
 In software engineering, dependency injection is a software design pattern that implements inversion of control for resolving dependencies. A dependency is an object that can be used (a service). An injection is the passing of a dependency to a dependent object (a client) that would use it.
 
+## 5.1 Type of Dependency Injection
+* Add providers to the "root module" so that the same instance of a service is available everywhere.
+* Register provider at a component level in the `providers` property of the `@Component` metadata.
+
+## 5.2 Injector
+* An injector maintains a container of service instances that it created.
+* An injector can create a new service instance from a provider.
+* Register provider with injectors.
+
+Note: Registering at a component level means you get a new instance of the service with each new instance of that component.
+
 # 6. Angular2 Modules
 Modules are executed within their own scope, not in the global scope; this means that variables, functions, classes, etc. declared in a module are not visible outside the module unless they are explicitly exported using one of the export forms. Conversely, to consume a variable, function, class, interface, etc. exported from a different module, it has to be imported using one of the import forms.
 
