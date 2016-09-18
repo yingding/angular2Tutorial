@@ -1,3 +1,7 @@
+# 0. About
+This is a simple skeleton for starting an Angular2.0.0 App.
+One module and one component
+
 # 1. Introduction
 The following section shows how to use the tool chain relating to developing web-app with Angular2. Current Angular release is 2.0.0
 ## Description
