@@ -1,5 +1,5 @@
-# 1. Introduction
-The following section shows how to use the tool chain relating to developing web-app with Angular2.
+# 1. Introduction Angular2 RC5
+The following section shows how to use the tool chain relating to developing web-app with Angular2 RC5, the final Angular2 Release is now available. This branch is deprecated. Commented on Sep.15th 2016.
 ## Description
 Tutorial for learning Angular2 with TypeScript
 
