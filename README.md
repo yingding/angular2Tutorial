@@ -1,3 +1,9 @@
+# 0. About
+this tutorial following the guide from https://angular.io/docs/ts/latest/tutorial/toh-pt2.html, part Styling the selection.
+
+* more about Angular2 Quickstart can be found unter https://github.com/angular/quickstart/blob/master/README.md
+* Todo: buiding tests and e2e-test
+
 # 1. Introduction
 The following section shows how to use the tool chain relating to developing web-app with Angular2. Current Angular release is 2.0.0
 ## Description
