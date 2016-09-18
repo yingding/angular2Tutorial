@@ -1,5 +1,5 @@
 # 1. Introduction
-The following section shows how to use the tool chain relating to developing web-app with Angular2.
+The following section shows how to use the tool chain relating to developing web-app with Angular2. Current Angular release is 2.0.0
 ## Description
 Tutorial for learning Angular2 with TypeScript
 
@@ -49,7 +49,7 @@ This sections shows how can you start this demo-app after you have cloned this r
 * Installing the devDependency, sometime the devDependency Libs are not installed, to install the devDependency Libs with <code>npm install --only=dev</code>
 * Using <code>npm uninstall tsc</code>, then <code>npm install typescript</code> to remove tsc v1.5.x and install tsc 1.8.x.
 
-# 3. Angular2 RC5
+# 3. Angular2
 
 ## Binding a component property to Angular Template
 * More details about two-way binding can be found under https://angular.io/docs/ts/latest/guide/template-syntax.html
@@ -168,6 +168,9 @@ Modules import one another using a module loader. At runtime the module loader i
  typings search jasmine
  typings install jasmine --save
  </code></pre>
+ 
+ * show typings package info `typings info dt~node-4 --versions` 
+ * install from dt source, ` typings install dt~node-4 --global --save`, https://www.npmjs.com/package/typings
  
  # 8. TypeScript accessor
  By default, if your member does not have an accessor it can be inferred to be public.
