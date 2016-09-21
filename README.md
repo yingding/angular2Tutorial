@@ -1,5 +1,5 @@
 # 0. About
-this tutorial following the guide from https://angular.io/docs/ts/latest/tutorial/toh-pt4.html, part 5 Services.
+this tutorial following the guide from https://angular.io/docs/ts/latest/tutorial/toh-pt5.html, part 6 Routing.
 
 * more about Angular2 Quickstart can be found unter https://github.com/angular/quickstart/blob/master/README.md
 * Todo: buiding tests and e2e-test
