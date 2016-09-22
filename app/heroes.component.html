@@ -1,0 +1,18 @@
+<h2>My Heroes</h2>
+<ul class="heroes">
+    <!-- use property binding of li css class selected, class.selected -->
+    <li *ngFor="let hero of heroes" [class.selected]="hero===selectedHero" (click)="onSelect(hero)">
+        <!-- each hero goes here -->
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </li>
+</ul>
+<!-- property binding to input property in child component-->
+<!-- <demo-hero-detail [hero]="selectedHero"></demo-hero-detail> -->
+<!-- mini heroes view -->
+<div *ngIf="selectedHero">
+    <h2>
+        <!-- Pipes are a good way to format strings, currency amounts, dates-->
+        {{selectedHero.name | uppercase}} is my hero
+    </h2>
+    <button (click)="gotoDetail()">View Details</button>
+</div>
