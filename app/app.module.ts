@@ -8,16 +8,25 @@ import {FormsModule} from '@angular/forms';
 
 import {AppComponent} from './app.component';
 import {HeroDetailComponent} from './hero-detail.component';
+import {HeroesComponent} from './heroes.component';
+import {HeroService} from './hero.service';
+import {routing} from './app.routing';
+
 
 @NgModule({
     // imports array, contains the list of external modules used by this application
     imports: [
         BrowserModule,
-        FormsModule
+        FormsModule,
+        routing // add routing to imports, since it is a preconfigurated ModuleWithProviders
     ],
     declarations: [
         AppComponent,
+        HeroesComponent,
         HeroDetailComponent
+    ],
+    providers: [
+        HeroService
     ],
     bootstrap: [AppComponent]
 })
