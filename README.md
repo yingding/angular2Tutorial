@@ -89,20 +89,24 @@ For example: <pre><code>&lt;div *ngIf="isAvailabe"&gt;{{element.title}} is avail
 
 ### Reactive extensions library (rxjs / RxJS)
 A reactive Extension allows us to get data from a security source.
+
 * Added in package.json
 * Imported in systemjs.config.js
 * More infos about RxJS can be found under https://angular.io/docs/ts/latest/guide/server-communication.html
 * **Note**: Using either the .toPromise() or .map() methods from RxJS to asynchronously parse the result of the HTTP request.
 
-
-For example:<pre><code>var data;
+For example:
+```javascript
+var data;
 {"price": 20,"meta": "from-the-server","data": [] }
 var source = getDataFromUrlOrOtherAsyncSource();
 source
 .filter(item => item.price > 50.60) // filter the item
     .map(item => item.data) // map item to item.data
     .subscribe( items => this.data = items // save the item.data list to data 
-    );</code></pre>
+    );
+```
+* An Observable is a stream of events that we can process with array-like operators. With `toPromise()`, an Observable can be converted to a promise. A single result in the form of a promise is easy for the calling component to consume. But requests aren't always "one and done". We may start one request, then cancel it, and make a different request before the server has responded to the first request. Such a request-cancel-new-request sequence is difficult to implement with Promise. It is easy with Observalbes.  
 
 
 ### Cold Observable
@@ -176,24 +180,26 @@ Modules import one another using a module loader. At runtime the module loader i
 ## Import Module
 * Import all members from a file as a specific variable name `import * as YourModuleIdentifier from 'path/module'`, the ModuleIdentifier can be different as the module name.
  
- # 7. TypeScript Definition Files
- * Use --declaration option of TypeScript compiler to generate a d.ts file for the compiled javascript file.
+# 7. TypeScript Definition Files
+* Use --declaration option of TypeScript compiler to generate a d.ts file for the compiled javascript file.
  
- ## Using typings tool
- * Install typings `npm install -g typings`
+## Using typings tool
+* Install typings `npm install -g typings`
  <pre><code>
  typings search jasmine
  typings install jasmine --save
  </code></pre>
  
- * show typings package info `typings info dt~node-4 --versions` 
- * install from dt source, ` typings install dt~node-4 --global --save`, https://www.npmjs.com/package/typings
+* show typings package info `typings info dt~node-4 --versions` 
+* install from dt source, ` typings install dt~node-4 --global --save`, https://www.npmjs.com/package/typings
  
- # 8. TypeScript accessor
- By default, if your member does not have an accessor it can be inferred to be public.
+# 8. TypeScript accessor
+By default, if your member does not have an accessor it can be inferred to be public.
  
- # 9. UnitTesting with Jasmine
- * More about UnitTest with Jasmine and Angular2 please see https://medium.com/google-developer-experts/angular-2-unit-testing-with-jasmine-defe20421584#.jn20d2gcp
+# 9. UnitTesting with Jasmine
+* More about UnitTest with Jasmine and Angular2 please see https://medium.com/google-developer-experts/angular-2-unit-testing-with-jasmine-defe20421584#.jn20d2gcp
 
 
+# About Markdown
+more about markdown syntax can be found under: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
