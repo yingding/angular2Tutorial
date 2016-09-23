@@ -202,4 +202,3 @@ By default, if your member does not have an accessor it can be inferred to be pu
 
 # About Markdown
 more about markdown syntax can be found under Markdown Cheatsheet: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-
