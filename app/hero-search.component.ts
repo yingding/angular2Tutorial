@@ -37,7 +37,7 @@ export class HeroSearchComponent implements OnInit {
                 // return the http search observable
                 ? this.heroSearchSerivce.search(term)
                 // or the observable of empty heroes if no search term
-                : Observable.of<Hero[]>()
+                : Observable.of<Hero[]>([])
             )
             .catch(error => {
                 console.log(error);
