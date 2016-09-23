@@ -11,6 +11,8 @@
     <li *ngFor="let hero of heroes" [class.selected]="hero===selectedHero" (click)="onSelect(hero)">
         <!-- each hero goes here -->
         <span class="badge">{{hero.id}}</span> {{hero.name}}
+        <!-- use $event.stopPropagation() to stop the the click event listening of to be deleted element -->
+        <button class="delete" (click)="delete(hero); $event.stopPropagation()">x</button>
     </li>
 </ul>
 <!-- property binding to input property in child component-->
