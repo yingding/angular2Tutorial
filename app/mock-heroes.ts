@@ -1,3 +1,7 @@
+/**
+ * with in-memory-data.service class
+ * this constant can be deleted,
+ */
 import { Hero } from './hero';
 
 export const HEROES: Hero[] = [
