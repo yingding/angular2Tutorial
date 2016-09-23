@@ -1,4 +1,11 @@
 <h2>My Heroes</h2>
+
+<div>
+    <!-- input #heroName creates an input id tag heroName-->
+    <label>Hero name:</label><input #heroName />
+    <button (click)="add(heroName.value);heroName.value=''">Add</button>
+</div>
+
 <ul class="heroes">
     <!-- use property binding of li css class selected, class.selected -->
     <li *ngFor="let hero of heroes" [class.selected]="hero===selectedHero" (click)="onSelect(hero)">
