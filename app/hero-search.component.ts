@@ -28,12 +28,12 @@ export class HeroSearchComponent implements OnInit {
         // each call to search puts a new string into this subject's observable stream by calling next
         this.searchTerms.next(term);
     }
-
+    // switchMap: formerly known as "flatMapLastest. swithMap preserves the original request order while returing only the observable from the most recent http method call. Results from prior calls are canceled and discarded.
     ngOnInit(): void {
         this.heroes = this.searchTerms
             .debounceTime(300) // wait for 300ms pause in events
             .distinctUntilChanged() // ignore if next search term is same as prvious
-            .switchMap( term => term // switch to new observable each time, formerly known as "flatMapLastest. swithMap preserves the original request order while returing only the observable from the most recent http method call. Results from prior calls are canceled and discarded.
+            .switchMap( term => term // switch to new observable each time
                 // return the http search observable
                 ? this.heroSearchSerivce.search(term)
                 // or the observable of empty heroes if no search term
